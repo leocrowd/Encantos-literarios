@@ -1,0 +1,330 @@
+.background {
+    min-height: 29rem;
+    background-image: url(../assets/images/hero-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1.25rem;
+
+    & img {
+        content: url(../assets/icons/logo-symbol.svg);
+        margin-right: auto;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    & #text-top {
+        padding: 3rem 1.25rem;
+        text-align: center;
+
+        & h1 {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+#text-bottom {
+    margin-top: 2rem;
+    position: relative;
+    padding: 3rem 1.25rem;
+    text-align: center;
+    
+
+    & img {
+        width: 2.5rem;
+        height: auto;
+        rotate: -15deg;  
+        position: absolute;
+        bottom: 77%;
+        left: 60%;
+        transition: rotate 0.3s ease;
+    }
+
+    & img:hover {
+       rotate: -5deg;
+    }
+
+    & .bottom-img {
+        display: flex;
+        padding-top: .5rem;
+        
+
+        & img:first-child {
+            width: 2rem;
+            height: 2rem;
+            rotate: -30deg;
+            position: absolute;
+            bottom: 20%;
+            left: 15%;
+            transition: rotate 0.3s ease;
+        }
+
+        & img:first-child:hover {
+            rotate: -20deg;
+        }
+    
+        & img:last-child {
+            width: 2.5rem;
+            height: 2.5rem;
+            rotate: 15deg;
+            position: absolute;
+            bottom: 18%;
+            left: 75%;
+            transition: rotate 0.3s ease;
+        }
+
+        & img:last-child:hover {
+            rotate: 5deg;
+        }
+    }
+}
+
+@media (width >=26.75em) {
+    
+#text-bottom {
+    margin-top: 3rem;
+    position: relative;
+    padding: 3rem 1.25rem;
+    text-align: center;
+    
+
+    & img {
+        width: 2.5rem;
+        height: auto;
+        rotate: -15deg;  
+        position: absolute;
+        bottom: 73%;
+        left: 50%;
+        transition: rotate 0.3s ease;
+    }
+
+    & img:hover {
+       rotate: -5deg;
+    }
+
+    & .bottom-img {
+        display: flex;
+        padding-top: .5rem;
+        
+
+        & img:first-child {
+            width: 2rem;
+            height: 2rem;
+            rotate: -30deg;
+            position: absolute;
+            bottom: 10%;
+            left: 10%;
+            transition: rotate 0.3s ease;
+        }
+
+        & img:first-child:hover {
+            rotate: -20deg;
+        }
+    
+        & img:last-child {
+            width: 2.5rem;
+            height: 2.5rem;
+            rotate: 15deg;
+            position: absolute;
+            bottom: 9%;
+            left: 80%;
+            transition: rotate 0.3s ease;
+        }
+
+        & img:last-child:hover {
+            rotate: 5deg;
+        }
+    }
+}
+}
+
+@media (width >=26.75em) {
+    nav {
+        padding: 1.75rem;  
+    }
+
+    main {
+        & #text-top {
+            padding: 3.5rem 2.5rem;
+            text-align: center;
+    
+            & h1 {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+@media (width >= 48em) {
+    nav {
+        padding: 2.5rem;  
+    }
+
+    main {
+        & #text-top {
+            padding: 3rem 8rem;
+            text-align: center;
+    
+            & h1 {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    #text-bottom {
+        margin-top: 4rem;
+        position: relative;
+        padding: 3rem 4rem;
+        text-align: center;
+
+        & img {
+            width: 2.5rem;
+            height: auto;
+            rotate: -15deg;  
+            position: absolute;
+            bottom: 73%;
+            left: 50%;
+            transition: rotate 0.3s ease;
+        }
+    
+        & img:hover {
+           rotate: -5deg;
+        }
+    
+        & .bottom-img {
+            & img:first-child {
+                left: 15%; 
+            }
+        }
+        
+    }
+
+}
+
+@media (width >= 90em) {
+    nav {
+        padding: 3.5rem 10rem 0 10rem;
+
+        & img {
+            content: url(../assets/icons/logo-horizontal.svg);
+        }
+    }
+
+    main {
+        & #text-top {
+            margin-inline: auto;
+            padding: 10rem 24.5rem 29.3rem 24.5rem;
+            
+            & h1 {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    #text-bottom {
+        max-width: 75rem;
+        margin-inline: auto;
+        margin-top: 6rem;
+        margin-bottom: 5rem;
+        position: relative;
+        padding: 3rem 2.5rem;
+        text-align: center;
+
+        & p span {
+            color: var(--blue-light);
+        }
+        
+    
+        & img {
+            width: 5.5rem;
+            height: auto;
+            rotate: 20deg;  
+            position: absolute;
+            bottom: 88%;
+            left: 47%;
+        }
+    
+        & img:hover {
+           rotate: -5deg;
+        }
+    
+        & .bottom-img {
+            display: flex;
+            padding-top: .5rem;
+            
+    
+            & img:first-child {
+                width: 5rem;
+                height: 5rem;
+                rotate: 99deg;
+                position: absolute;
+                top: 80%;
+                left: 1%;
+                transition: rotate 0.3s ease;
+            }
+    
+            & img:first-child:hover {
+                rotate: 120deg;
+            }
+        
+            & img:last-child {
+                width: 4.5rem;
+                height: 4.5rem;
+                rotate: -15deg;
+                position: absolute;
+                top: 80%;
+                left: 95%;
+                transition: rotate 0.3s ease;
+            }
+    
+            & img:last-child:hover {
+                rotate: 5deg;
+            }
+        }
+    }
+
+    #text-bottom:is(:target, :hover) img:first-child {
+        transform: rotate(0deg); /* Girar para a posição original */
+    opacity: 1;
+    }
+}
+
+@media (width >= 157em) {
+    nav {
+        padding-top: 6rem;
+
+        & img {
+            width: 20rem;
+        }
+    }
+
+    main {
+        & #text-top {
+            margin-inline: auto;
+            padding: 10rem 40rem 50rem 40rem;
+            
+            & h1 {
+                font-size: 5rem;
+                margin-bottom: 2rem;
+            }
+
+            & p {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    #text-bottom {
+        margin-top: 13rem;
+    }
+}

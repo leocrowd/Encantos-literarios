@@ -1,0 +1,588 @@
+#monthly-kit {
+    margin-top: 6.5rem;
+
+    & #text-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+        margin-bottom: 6rem;
+    }
+    & .main-text {
+        display: flex;
+        align-items: center;
+
+        & img {
+          width: 1.25rem;
+          height: auto;  
+          
+        }
+        
+        & h3 {
+            padding: 0 .75rem;
+        }
+    }
+
+}
+
+#img-group {
+    width: 23.43rem;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .book {
+        width: 9.8rem;
+        height: auto;
+
+        position: relative;
+        z-index: 3;
+    }
+
+    & .pin {
+        width: 4.68rem;
+        height: auto;
+        rotate: -7.55deg;
+
+        position: absolute;
+        top: 70%;
+        left: 17%;
+        z-index: 2;
+    }
+
+    & .bookmark-yellow {
+        width: 3.65rem;
+        height: 11.25rem;
+        rotate: 11.72deg;
+
+        position: absolute;
+        bottom: 23%;
+        right: 20%;
+        z-index: 1;
+    }
+
+    & .bookmark-purple {
+        width: 3.65rem;
+        height: 11.25rem;
+        rotate: 22.09deg;
+
+        position: absolute;
+        bottom: 10%;
+        right: 12%;
+        z-index: 0;
+    }
+
+    & .label-pin, .label-book, .label-bookmark {
+        position: absolute;
+        font: 400 .625rem/140% var(--ff);
+        color: var(--text-body);
+        z-index: 2;
+    }
+
+    & .label-pin {
+        top: 50%;
+        left: 9%;
+    }
+
+    & .label-book {
+        bottom: 110%;
+        left: 5%;
+    }
+      
+    & .label-bookmark {
+        top: 114%;
+        right: 15%;
+    }
+
+    & .first-arrow, .second-arrow, .third-arrow {
+        position: absolute;
+    }
+
+    & .first-arrow {
+        bottom: 100%;
+        left: 15%;
+      }
+      
+    & .second-arrow {
+        top: 58%;
+        left: 14%;
+      }
+      
+      .third-arrow {
+        top: 85%;
+        right: 16%;
+      }
+}
+
+@media (width >=26.75em) {
+    #monthly-kit {
+        margin-top: 5rem;
+    }
+
+    #img-group {
+        
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        & .book {
+            width: 10.78rem;
+            height: auto;
+    
+            position: relative;
+            z-index: 3;
+        }
+    
+        & .pin {
+            width: 5.14rem;
+            height: auto;
+            rotate: -7.55deg;
+    
+            position: absolute;
+            top: 70%;
+            left: 18%;
+            z-index: 2;
+        }
+    
+        & .bookmark-yellow {
+            width: 4.01rem;
+            height: 12.37rem;
+            rotate: 11.72deg;
+    
+            position: absolute;
+            bottom: 23%;
+            right: 20%;
+            z-index: 1;
+        }
+    
+        & .bookmark-purple {
+            width: 4.01rem;
+            height: 12.37rem;
+            rotate: 22.09deg;
+    
+            position: absolute;
+            bottom: 10%;
+            right: 12%;
+            z-index: 0;
+        }
+    
+        & .label-pin, .label-book, .label-bookmark {
+            position: absolute;
+            font: 400 .687rem/140% var(--ff);
+            color: var(--text-body);
+            z-index: 2;
+        }
+    
+        & .label-pin {
+            top: 50%;
+            left: 9%;
+        }
+    
+        & .label-book {
+            bottom: 110%;
+            left: 7%;
+        }
+          
+        & .label-bookmark {
+            top: 112%;
+            right: 15%;
+        }
+    
+        & .first-arrow, .second-arrow, .third-arrow {
+            position: absolute;
+        }
+    
+        & .first-arrow {
+            bottom: 100%;
+            left: 18%;
+          }
+          
+        & .second-arrow {
+            top: 58%;
+            left: 14%;
+          }
+          
+          .third-arrow {
+            top: 85%;
+            right: 16%;
+          }
+    }
+}
+
+@media (width >= 48em) {
+    #monthly-kit {
+        position: relative;
+    }
+    #img-group {
+        
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-inline: auto;
+    
+        & .book {
+            width: 12.93rem;
+            height: auto;
+    
+            position: relative;
+            z-index: 3;
+        }
+    
+        & .pin {
+            width: 6.16rem;
+            height: auto;
+            rotate: -7.55deg;
+    
+            position: absolute;
+            top: 70%;
+            left: 29%;
+            z-index: 2;
+        }
+    
+        & .bookmark-yellow {
+            width: 4.8rem;
+            height: 14.84rem;
+            rotate: 11.72deg;
+    
+            position: absolute;
+            bottom: 23%;
+            right: 30%;
+            z-index: 1;
+        }
+    
+        & .bookmark-purple {
+            width: 4.8rem;
+            height: 14.84rem;
+            rotate: 22.09deg;
+    
+            position: absolute;
+            bottom: 10%;
+            right: 25%;
+            z-index: 0;
+        }
+    
+        & .label-pin, .label-book, .label-bookmark {
+            position: absolute;
+            font: 400 .687rem/140% var(--ff);
+            color: var(--text-body);
+            z-index: 2;
+        }
+    
+        & .label-pin {
+            top: 52%;
+            left: 23%;
+        }
+    
+        & .label-book {
+            bottom: 108%;
+            left: 24%;
+        }
+          
+        & .label-bookmark {
+            top: 110%;
+            right: 27%;
+        }
+    
+        & .first-arrow, .second-arrow, .third-arrow {
+            position: absolute;
+        }
+    
+        & .first-arrow {
+            bottom: 100%;
+            left: 31%;
+          }
+          
+        & .second-arrow {
+            top: 60%;
+            left: 27%;
+          }
+          
+          .third-arrow {
+            top: 86%;
+            right: 28%;
+          }
+    }
+}
+
+@media (width >= 90em) {
+    #monthly-kit {
+        margin-top: 14.68rem;
+        & #text-group p {
+            padding-bottom: 5.5rem;
+            font: var(--body-md);
+        }
+    }
+
+
+    #img-group {
+        
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        & .book {
+            width: 29.18rem;
+            height: auto;
+    
+            position: relative;
+            z-index: 3;
+        }
+
+        & .pin, .bookmark-purple, .bookmark-yellow, .label-book,
+            .label-bookmark, .label-pin, .first-arrow,
+            .second-arrow, .third-arrow {
+            opacity: 0;
+            transform: translateY(50px); /* Move todos os elementos para baixo */
+            transition: transform 0.5s ease, opacity 0.5s ease; /* Transições para suavidade */
+            position: absolute;
+        }
+    
+        & .pin {
+            width: 13.87rem;
+            height: auto;
+            rotate: -7.55deg;
+    
+            position: absolute;
+            top: 72%;
+            left: 24%;
+            z-index: 2;
+        }
+    
+        & .bookmark-yellow {
+            width: 10.75rem;
+            height: 33.5rem;
+            rotate: 11.72deg;
+    
+            position: absolute;
+            bottom: 23%;
+            right: 30%;
+            z-index: 1;
+        }
+    
+        & .bookmark-purple {
+            width: 10.75rem;
+            height: 33.5rem;
+            rotate: 22.09deg;
+    
+            position: absolute;
+            bottom: 10%;
+            right: 25%;
+            z-index: 0;
+        }
+    
+        & .label-pin, .label-book, .label-bookmark {
+            position: absolute;
+            font: 400 1rem/140% var(--ff);
+            color: var(--text-body);
+            z-index: 2;
+        }
+    
+        & .label-pin {
+            top: 52%;
+            left: 20%;
+        }
+    
+        & .label-book {
+            bottom: 108%;
+            left: 20%;
+        }
+          
+        & .label-bookmark {
+            top: 110%;
+            right: 31%;
+        }
+    
+        & .first-arrow, .second-arrow, .third-arrow {
+            position: absolute;
+        }
+    
+        & .first-arrow {
+            bottom: 100%;
+            left: 25%;
+            width: 10.9rem;
+            height: auto;
+          }
+          
+        & .second-arrow {
+            top: 58%;
+            left: 21%;
+            height: 7.93rem;
+            width: auto;
+          }
+          
+          .third-arrow {
+            top: 86%;
+            right: 28%;
+            height: 9.46rem;
+            width: auto;
+          }
+    }
+
+
+    #monthly-kit:hover #img-group .label-book,
+    #monthly-kit:hover #img-group .label-bookmark,
+    #monthly-kit:hover #img-group .label-pin,
+    #monthly-kit:hover #img-group .first-arrow,
+    #monthly-kit:hover #img-group .second-arrow,
+    #monthly-kit:hover #img-group .third-arrow,
+    #monthly-kit:hover #img-group .pin,
+    #monthly-kit:hover #img-group .bookmark-yellow,
+    #monthly-kit:hover #img-group .bookmark-purple {
+    opacity: 1;
+    transform: translateY(0); 
+    }
+}
+
+@media (width >= 157em) {
+    #monthly-kit {
+        margin-top: 15rem;
+    
+        & #text-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: .5rem;
+            margin-bottom: 6rem;
+
+            & p {
+                font-size: 1.5rem;
+            }
+        }
+        & .main-text {
+            display: flex;
+            align-items: center;
+    
+            & img {
+              width: 1.25rem;
+              height: auto;  
+              
+            }
+            
+            & h3 {
+                padding: 0 .75rem;
+                font-size: 3rem;
+            }
+        }
+    
+    }
+
+    
+    #img-group {
+        
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        & .book {
+            width: 29.18rem;
+            height: auto;
+    
+            position: relative;
+            z-index: 3;
+        }
+
+        & .pin, .bookmark-purple, .bookmark-yellow, .label-book,
+            .label-bookmark, .label-pin, .first-arrow,
+            .second-arrow, .third-arrow {
+            opacity: 0;
+            transform: translateY(50px); /* Move todos os elementos para baixo */
+            transition: transform 0.5s ease, opacity 0.5s ease; /* Transições para suavidade */
+            position: absolute;
+        }
+    
+        & .pin {
+            width: 13.87rem;
+            height: auto;
+            rotate: -7.55deg;
+    
+            position: absolute;
+            top: 72%;
+            left: 34%;
+            z-index: 2;
+        }
+    
+        & .bookmark-yellow {
+            width: 10.75rem;
+            height: 33.5rem;
+            rotate: 11.72deg;
+    
+            position: absolute;
+            bottom: 22%;
+            right: 37%;
+            z-index: 1;
+        }
+    
+        & .bookmark-purple {
+            width: 10.75rem;
+            height: 33.5rem;
+            rotate: 22.09deg;
+    
+            position: absolute;
+            bottom: 5%;
+            right: 33%;
+            z-index: 0;
+        }
+    
+        & .label-pin, .label-book, .label-bookmark {
+            position: absolute;
+            font: 400 1.5rem/140% var(--ff);
+            color: var(--text-body);
+            z-index: 2;
+        }
+    
+        & .label-pin {
+            top: 52%;
+            left: 30%;
+        }
+    
+        & .label-book {
+            bottom: 110%;
+            left: 31%;
+        }
+          
+        & .label-bookmark {
+            top: 110%;
+            right: 35%;
+        }
+    
+        & .first-arrow, .second-arrow, .third-arrow {
+            position: absolute;
+        }
+    
+        & .first-arrow {
+            bottom: 100%;
+            left: 35%;
+            width: 10.9rem;
+            height: auto;
+          }
+          
+        & .second-arrow {
+            top: 59%;
+            left: 32%;
+            height: 7.93rem;
+            width: auto;
+          }
+          
+          .third-arrow {
+            top: 86%;
+            right: 35%;
+            height: 9.46rem;
+            width: auto;
+          }
+    }
+}

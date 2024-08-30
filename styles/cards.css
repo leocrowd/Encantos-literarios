@@ -1,0 +1,69 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    
+    
+    align-items: center;
+    
+    padding: 2rem;
+    width: 19rem;
+    height: 25rem;
+    border-radius: 1.5rem;
+    background-color: var(--shape-base);
+
+    & ul {
+    
+        list-style-type: none; 
+        padding-left: 0; 
+      }
+      
+      & ul li {
+        position: relative; 
+        padding-left: 24px;
+        font: var(--body-xs);
+        color: var(--text-body);
+        margin-bottom: .75rem;
+      }
+    
+      & ul li:last-child {
+        margin-bottom: 0;
+      }
+      
+      & ul li::before {
+        content: ''; 
+        position: absolute;
+        left: 0;
+        width: 14px; 
+        height: 14px; 
+        background-image: url('../assets/icons/star-list.svg'); 
+        background-size: contain; 
+        background-repeat: no-repeat; 
+      }
+
+    & .label {
+        
+        
+        & span {
+            font: var(--title-xs);
+        }
+
+        & h2 {
+            margin-top: 1.5rem;
+            
+            & span {
+                font:  var(--title-xs);
+            }
+        }
+
+        & p {
+            color: var(--text-label);
+            
+        }
+    }
+}
+
+
+
+  .details {
+    margin-bottom: 1.5rem;
+  }

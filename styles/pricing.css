@@ -1,0 +1,248 @@
+#pricing {
+  background-image: url(../assets/images/pricing-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin-top: 6.5rem;
+  display: flex;
+  flex-direction: column;
+
+  overflow-x: hidden;
+  justify-content: flex-start;
+
+  margin-left: 1rem;
+
+  & h3 {
+    text-align: center;
+    max-width: 13.8rem;
+    margin-bottom: 3rem;
+    align-self: center;
+  }
+}
+
+.cards {
+  display: flex;
+  gap: 1.5rem;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 0 1rem;
+}
+
+.card {
+  width: 17rem;
+  height: 25rem;
+  display: flex;
+  flex: 0 0 90%;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--shape-base);
+  border: 1px solid var(--shape-stroke);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  scroll-snap-align: start;
+
+  & .label {
+    margin-bottom: auto;
+    & h4 {
+      margin-bottom: 1.5rem;
+    }
+
+    & span {
+      font: var(--title-xs);
+    }
+  }
+
+  & ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  & ul li {
+    position: relative;
+    padding-left: 24px;
+    font: var(--body-xs);
+    color: var(--text-body);
+    margin-bottom: 0.75rem;
+  }
+
+  & ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  & ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    background-image: url("../assets/icons/star-blue.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+#semester-card {
+  & #tag {
+    display: flex;
+
+    & h4 {
+      margin-right: auto;
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+@media (width >=26.75em) {
+  .card {
+    flex: 0 0 80%;
+  }
+}
+
+@media (width >= 48em) {
+  .cards {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-start;
+
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 0 4rem;
+  }
+
+  .card {
+    flex: 0 0 50%;
+    min-width: 18rem;
+  }
+}
+
+@media (width >= 57em) {
+  .card {
+    flex: 0 0 40%;
+    min-width: 18rem;
+  }
+}
+
+@media (width >= 90em) {
+  #pricing {
+    padding: 12rem 12.2rem;
+    & h3 {
+      max-width: 19rem;
+      padding-bottom: 3.5rem;
+    }
+  }
+  .cards {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+
+    overflow-x: unset;
+    padding: 0 4rem;
+  }
+
+  .card {
+    width: 18rem;
+    flex: none;
+  }
+
+  #semester-card {
+    & .btn-secondary {
+      background-color: var(--pink-dark);
+    }
+
+    & .btn-secondary:hover {
+      background-color: var(--pink-base);
+    }
+
+    & ul li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 14px;
+      height: 14px;
+      background-image: url("../assets/icons/star-purple.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  #semester-card::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 15%;
+    width: 2.81rem;
+    height: 3.11rem;
+    background-image: url("../assets/icons/Bunny.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .cards:hover #semester-card::before {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .cards {
+    margin-inline: auto;
+    position: relative;
+  }
+
+  #semester-card {
+    position: relative;
+    z-index: 2;
+  }
+
+  #monthly-card {
+    rotate: -8deg;
+    position: absolute;
+    right: 88%;
+    top: 10%;
+    z-index: 1;
+  }
+
+  #annual-card {
+    rotate: 8deg;
+    position: absolute;
+    left: 88%;
+    top: 10%;
+    z-index: 1;
+  }
+
+  #monthly-card {
+    opacity: 0;
+    transform: translateY(50px);
+    transform: translateX(50px);
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transições para suavidade */
+    position: absolute;
+  }
+
+  #annual-card {
+    opacity: 0;
+    transform: translateY(50px);
+    transform: translateX(-50px);
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transições para suavidade */
+    position: absolute;
+  }
+
+  .cards:hover #monthly-card,
+  .cards:hover #annual-card {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (width >= 157em) {
+  #pricing {
+    & h3 {
+      font-size: 3rem;
+      text-align: center;
+      max-width: 30rem;
+      margin-bottom: 3rem;
+      align-self: center;
+    }
+  }
+}

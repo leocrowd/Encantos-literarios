@@ -1,0 +1,96 @@
+.text-regular {
+    font: var(--body-sm);
+    color: var(--text-body);
+}
+
+.text-md {
+    font: var(--subtitle-mobile);
+    color: var(--text-body);
+
+}
+
+.text-sm {
+    font: var(--body-sm);
+    color: var(--text-body);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+}
+
+.btn-primary {
+    width: 5.56rem;
+    height: 2.5rem;
+    border-radius: .5rem;
+
+    font: var(--button);
+    color: var(--text-title);
+    background-color: var(--pink-dark);
+
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: var(--pink-base);
+}
+
+.btn-secondary {
+    width: 13rem;
+    height: 2.5rem;
+    border-radius: .5rem;
+
+    font: var(--button);
+    color: var(--text-title);
+    background-color: var(--blue-dark);
+
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.btn-secondary:hover {
+    background-color: var(--blue-mid);
+}
+
+.btn-card {
+    height: 1.87rem;
+    width: 5.62rem;
+    border-radius: 50rem;
+    color: var(--text-body);
+    background-color: var(--shape-stroke);
+    font: var(--tag);
+    text-align: center;
+}
+
+@media (width >= 90em) {
+    .text-regular {
+        font: var(--body-lg);
+    }
+
+    .text-md {
+        font: var(--subtitle);
+    }
+}
+
+@media (width >= 157em) {
+    .btn-primary {
+        width: 10rem;
+        height: 4.22rem;
+        border-radius: .5rem;
+    
+        font: var(--button);
+        color: var(--text-title);
+        background-color: var(--pink-dark);
+    
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
